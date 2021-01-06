@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Stylish', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    height: 65px;
+    position: absolute;
+    width: 100%;
+    padding: 0 100px;
+    background: rgb(63, 17, 68);
+    top: 0;
+    left: 0;
+}
+.logo{
+    color:white;
+    place-items: center;
+    float: left;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 65px;
+    height: 65px;
+}
+nav{
+    float: right;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 0 20px;
+    height: 65px;
+    line-height: 65px;
+    display: block;
+
+}
+nav ul li a.active,
+nav ul li a:hover{
+    color: black;
+    background: rgb(203, 245, 141);
+    border: 1px solid white;
+
+}
+.nav-toggle{
+    float: right;
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+.carousel{
+    height: 700px;
+    width: 100%;
+    margin-top: 65px;
+}
+.carousel-caption{
+    background: rgb(220, 252, 253);;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    height:150px;
+    
+
+}
+.carousel-caption h5{
+    color: black;
+}
+.carousel-caption p{
+    color: black;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;  
+    background: rgb(221, 244, 245);
+    padding:25px 0px;
+}
+.home-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px 25px 100px;
+     
+    
+}
+.first-text{
+    display: flex;
+    align-items: center;
+    color:black;
+    text-align: justify;
+    font-size: 1.2rem;
+    
+}
+.textpart button{
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 15px;
+    background: red;
+    height: 40px;
+    width: 150px;  
+    color: white;
+    transition: all 1s ease-in ;
+}
+.textpart button:hover{
+    background: green;
+    color: white;
+}
+.firstimage{
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.ourservices{
+    height: auto;
+    width: 100%;
+    background: rgb(193, 248, 250);
+
+}
+.ourservices h1{
+    text-align: center;
+    padding: 20px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding: 20px 100px 75px;
+    background: rgb(193, 248, 250);
+    overflow: hidden;
+    
+}
+.service-container{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content:center;
+    text-align: center;    
+}
+.item{
+    background: white;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-in ;
+        
+}
+.item:hover{
+    background: rgb(152, 248, 252);;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 3);  
+    transform: scale(1.1);
+}
+.item img{
+    border-radius: 150px;
+}
+.item h1{
+    font-size: 1.5rem;
+}
+.item button{
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 15px;
+    background: red;
+    height: 40px;
+    width: 100px;
+    color: white;
+}
+.item button:hover{
+    background: green;
+    color: white;
+  
+}
+.contact{
+    padding: 40px 0 0 0;
+    background: rgb(131, 239, 243);
+
+}
+.cohome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px 50px;  
+    background: rgb(131,239,243);
+    margin: 0px;
+}
+.cohome-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 100px 0px 100px;
+    margin: 0px;
+     
+    
+}
+
+.form h2{
+    color: black;
+    font-size: 2rem;
+    text-align:center;
+    padding: 20px;
+    text-decoration: underline;
+}
+.form input{
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.form textarea{
+    height: 100px;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+input.submit{
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 15px;
+    background: red;
+    height: 40px;
+    width: 100px;
+    color: white;
+}
+input.submit:hover{
+    background: green;
+    color: white;
+  
+}
+iframe{
+    height:100%;
+    width: 100%;
+}
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 30px;
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background: rgb(0, 0, 0);
+    color: rgb(219, 217, 217); 
+    cursor: pointer; 
+    padding: 8px; 
+    border-radius: 50px; 
+    font-size: 1.1rem; 
+    opacity: 0.8;
+}
+.footer{
+    height: auto;
+    width: 100%;
+    background:  rgb(63, 17, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 25px 150px;
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+.social{
+    list-style: none;
+}
+.social1{
+    padding-top:10px;
+    display: flex;
+            
+}
+.quicklinks{
+    list-style: none;
+    font-size: 1rem;
+    
+}
+.quicklinks li a{
+    text-decoration: none;
+    color: white;
+}
+.social1 li{
+    padding-right: 15px;
+    color: white;
+}
+.social1 li a{
+    color: white;
+}
+
+
+
+
+
+
+
+@media (max-width:991px){
+    header{
+        padding: 0 25px;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background:  rgb(63, 17, 68);
+        top: 65px;
+        left: -100%;
+        transition: 1s ;
+        z-index: 10;
+    }
+    nav.active{
+        left: 0;
+        z-index: 10;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    .carousel{
+        display: none;
+    }
+    .home{
+        height: auto;
+        padding: 80px 25px 25px;
+    }
+    .home-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 0px
+        
+    }
+    .firstimage{
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+    }
+   
+    .service{
+        padding: 0 25px;
+        height: auto;
+    }
+
+         
+    .service-container{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+    
+           
+    }
+    .item{
+        height: auto;
+        margin:10px  0px;
+        background: white;
+        padding: 10px;
+        border: 1px solid black;
+        
+            
+    }
+    .item:hover{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 3);
+        transform: translateY(-10px);
+    }
+    .item p{
+        padding: 10px 0;
+    }
+    .item img{
+        border-radius: 150px;
+    }
+    .item button{
+        font-size: 1.2rem;
+        margin: 10px;
+        border-radius: 15px;
+        background: red;
+        height: 40px;
+        width: 100px;
+    
+    }
+     
+    .cohome{
+        height: auto;
+        padding: 0px 25px;
+        margin: 0px;
+    }
+    .cohome-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 0px;
+        margin:0px;
+        
+    }
+    .contact{
+        padding: 20px;
+    }
+    .form h2{
+        margin: 0px;
+        padding: 0px;
+    }
+    iframe{
+        padding: 25px 0px;
+        height: 400px;
+        width: 100%;
+    }
+    .footer{
+        height: auto;
+        width: 100%;
+        padding:25px;
+    }
+    .footer_container{
+        grid-template-columns: 1fr;
+        display: grid;
+        padding: 0px;
+        row-gap: 20px;
+    }
+    
+       
+        
+
+
+}
